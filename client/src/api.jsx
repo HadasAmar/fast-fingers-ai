@@ -1,6 +1,7 @@
 
 // Centralized API calls using base URL from environment variable
 const BASE_URL = process.env.REACT_APP_API_URL;
+console.log("API Base URL:", BASE_URL);
 
 export async function fetchLetterStats() {
   const res = await fetch(`${BASE_URL}/letter-stats`);
