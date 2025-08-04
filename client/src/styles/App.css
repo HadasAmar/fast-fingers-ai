@@ -1,0 +1,99 @@
+/* --- Global styles --- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #333;
+}
+
+/* --- Layout containers --- */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-link:hover { text-decoration: underline; }
+
+.page-container {
+  margin-top: 70px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+/* --- Card containers --- */
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* --- Typography --- */
+.title {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #444;
+}
+
+.subtitle {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* --- Buttons --- */
+.btn {
+  background: #667eea;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  transition: background 0.3s ease;
+}
+.btn:hover { background: #5a67d8; }
+.btn-alt { background: #764ba2; }
+.btn-alt:hover { background: #6b3c96; }
+.btn-danger { background: #e53e3e; }
+.btn-danger:hover { background: #c53030; }
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* --- Animations --- */
+.fade-in { animation: fadeIn 0.6s ease-in-out; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
