@@ -115,7 +115,6 @@ def next_text_ai(data: NewText):
 
    
     if not data.letter_errors:
-        # פרומפט למוטיבציה כשאין טעויות
         prompt = f"""
         Generate a text for touch typing learning (blind typing).
         Return ONLY the practice text with EXACTLY {int(data.words)} words separated by spaces.
