@@ -1,6 +1,6 @@
 
 // Centralized API calls using base URL from environment variable
-const BASE_URL = process.env.REACT_APP_API_URL.trim() || "https://fast-fingers-ai.onrender.com";
+const BASE_URL = "https://fast-fingers-ai.onrender.com";
 console.log("API Base URL:", BASE_URL);
 console.log("Full process.env", process.env);
 
